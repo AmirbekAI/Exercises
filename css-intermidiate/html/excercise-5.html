@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Tooltip</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Full height of the viewport */
+      background-color: #f0f0f0; /* Background color */
+      margin: 0; /* Remove default margin */
+    }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      padding: 5px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%; /* Position above the tooltip */
+      left: 50%;
+      margin-left: -60px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .home {
+      margin-top: 50px; /* Space above the Home link */
+      color: #76c7c0;
+      text-decoration: none; /* No underline */
+    }
+  </style>
+</head>
+<body>
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+
+<a class="home" href="index.html">Home</a>
+</body>
+</html>

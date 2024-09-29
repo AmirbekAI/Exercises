@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Overlay</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+    }
+    .overlay-container {
+      position: relative;
+      width: 300px;
+      margin: auto;
+    }
+    .overlay-image {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+    .overlay-container:hover .overlay {
+      display: flex;
+    }
+    .home-link {
+      display: block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #76c7c0;
+    }
+  </style>
+</head>
+<body>
+<h1>CSS Overlay</h1>
+<div class="overlay-container">
+  <img src="https://via.placeholder.com/300" alt="Placeholder" class="overlay-image">
+  <div class="overlay">Additional Information</div>
+</div>
+
+<a class="home-link" href="index.html">Home</a>
+</body>
+</html>

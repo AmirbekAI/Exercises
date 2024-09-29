@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Form</title>
+  <style>
+    input[type="text"], input[type="email"], input[type="password"] {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+      border-color: blue;
+    }
+    input[type="submit"] {
+      background-color: green;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form{
+      margin-top: 50px;
+    }
+    .home{
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+<a class="home" href="index.html">Home</a>
+<form>
+  <input type="text" placeholder="Name">
+  <input type="email" placeholder="Email">
+  <input type="password" placeholder="Password">
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>

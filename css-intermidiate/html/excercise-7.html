@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Component</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .card {
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      width: 300px;
+    }
+
+    .card:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    a {
+      margin-top: 20px;
+      display: block;
+      text-decoration: none;
+      color: #007bff;
+    }
+    .home-link{
+      margin-top: 50px;
+      color: #76c7c0;
+    }
+  </style>
+</head>
+<body>
+
+
+<div class="card">
+  <h2>Card Title</h2>
+  <p>This is a card component with shadow, padding, and hover effects.</p>
+</div>
+
+<div>
+  <a class="home-link" href="index.html">Home</a>
+</div>
+
+
+</body>
+</html>

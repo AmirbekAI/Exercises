@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <style>
+    figure {
+      float: left;
+      margin: 10px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 600px) {
+      figure {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+<nav><a href="index.html">Home</a></nav>
+<h1>Responsive Image Gallery</h1>
+<figure>
+  <img src="../../media/image1.jpg" alt="Image 1">
+  <figcaption>Image 1</figcaption>
+</figure>
+<figure>
+  <img src="../../media/image2.png" alt="Image 2">
+  <figcaption>Image 2</figcaption>
+</figure>
+<figure>
+  <img src="../../media/image3.png" alt="Image 3">
+  <figcaption>Image 3</figcaption>
+</figure>
+<figure>
+  <img src="../../media/image4.png" alt="Image 4">
+  <figcaption>Image 4</figcaption>
+</figure>
+</body>
+</html>
