@@ -76,10 +76,10 @@
 
 <script>
   function toggleAccordion(element) {
-    // Toggle active class on the clicked title
+
     element.classList.toggle("active");
 
-    // Find the corresponding content and toggle its display
+
     const content = element.nextElementSibling;
     if (content.style.display === "block") {
       content.style.display = "none";
